@@ -14,8 +14,8 @@ function Analogclock(props) {
 
 
     let clockContainer = {
-        width: 250,
-        height: 250,
+        width: 200,
+        height: 200,
         borderRadius: 20000,
         // borderStyle: "solid",
         // borderColor: "red",
@@ -26,8 +26,8 @@ function Analogclock(props) {
 
     let secondHand = {
         position: 'relative',
-        top: -8,
-        left: 123,
+        top: -10,
+        left: 100,
         border: '1px solid red',
         width: 120,
         height: 1,
@@ -39,29 +39,29 @@ function Analogclock(props) {
 
     let minuteHand = {
         position: 'relative',
-        top: -14,
-        left: 123,
+        top: -17,
+        left: 98,
         border: '2px solid #cddc39',
-        width: 90,
+        width: 95,
         height: 3,
         borderRadius: '10px',
         // transform: 'rotate(' + ((time.getMinutes()/60)*360 - 90 ).toString() + 'deg)',
         transform: `rotate(${((time.getMinutes() / 60) * 360 - 90).toString()}deg)`,
         transformOrigin: '0% 0%',
-        backgroundColor: '#cddc39',
+        // backgroundColor: '#cddc39',
         zIndex: '-1'
     }
 
     let hourHand = {
         position: 'relative',
-        top: -21,
-        left: 131,
+        top: -16,
+        left: 99,
         border: '2px solid #cddc39',
-        width: 80,
+        width: 70,
         height: 6,
         transform: 'rotate(' + ((time.getHours() / 12) * 360 - 90).toString() + 'deg)',
         transformOrigin: '0% 0%',
-        backgroundColor: '#cddc39',
+        // backgroundColor: '#cddc39',
         borderRadius: '10px',
         zIndex: '-1'
     }
